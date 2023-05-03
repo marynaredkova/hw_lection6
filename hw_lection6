@@ -1,0 +1,18 @@
+# random list
+import random
+randomList=[]
+for i in range(100):
+   r=random.randint(1,100)
+   if r not in randomList:
+      randomList.append(r)
+print("random list numbers:")
+print(randomList)
+
+from statistics import mean
+def Average(randomList):
+    return mean(randomList)
+average = Average(randomList)
+print("Average =", round(average, 4))
+
+import numpy as np  
+print("Sum =",np.sum(randomList))  
